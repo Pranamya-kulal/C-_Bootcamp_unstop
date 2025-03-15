@@ -49,3 +49,24 @@ int main() {
     cout << result << endl;
     return 0;
 }
+
+
+
+2 ND APPROACH:
+// Placeholder function for user logic
+int findLargestNumber(vector<int>& arr) {
+   int min1=INT_MAX,min2=INT_MAX;
+   for(int num : arr){
+   if(num<min1)
+   {
+    min2=min1;
+    min1=num;
+   }
+   else if(num<min2){
+    min2=num;
+   }
+   }
+   int result=max(min1*10+min2,min2*10+min1);
+
+    return result; // Placeholder return value
+}
